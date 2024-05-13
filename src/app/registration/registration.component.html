@@ -1,0 +1,43 @@
+<div class="registration-container">
+    <h2>Registration</h2>
+    <form (submit)="onSubmit()">
+      <div style="display: flex;">
+        <label class="input" for="id">Id</label>
+        <input type="number" id="id" name="id" [(ngModel)]="formData.id" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="volunteerId">Volunteer Id</label>
+        <input type="number" id="volunteerId" name="volunteerId" [(ngModel)]="formData.volunteerId" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="username">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="formData.username" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="firstName">First name</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+      </div>
+      <div style="display: flex;">
+        <label class="input" for="phone">Phone</label>
+        <input type="phone" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+      </div>
+      <!-- <div style="display: flex;">
+        <label class="input" for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="formData.password" required>
+      </div> -->
+      <div style="display: flex;">
+        <label class="input" for="userStatus">Register as</label>
+        <input type="text" id="userStatus" name="userStatus" [(ngModel)]="formData.userStatus" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
